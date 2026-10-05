@@ -1,6 +1,6 @@
-# RML-Digital-Portfolio
+# RML-Zone
 
-A remake of my original digital portfolio made previously for college in Google Sites. This time with the help of Vue.js as well as HTML, CSS, and also JavaScript.
+A remake of my original digital portfolio (now a website) made previously for college in Google Sites. This time with the help of Vue.js as well as HTML, CSS, and also JavaScript.
 The design was technically made from scratch, hence you may notice some unpolished areas.
 A bit rough when it comes to dynamic resolutions, but looks decent at the very least.
 
