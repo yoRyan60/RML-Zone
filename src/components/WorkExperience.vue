@@ -43,7 +43,7 @@ export default {
                         Go check them out here:
                     </p>
                     <br>
-                    <p style="font-family: Eight Bit Dragon; color: orange; font-size: 12px; font-style: italic; text-decoration: underline;"> 
+                    <p style="font-family: Eight Bit Dragon; color: orange; font-size: 14px; font-style: italic; text-decoration: underline;"> 
                         <a href="https://dai.global-intelligent-solutions.com/" target="_blank">Doña Alejandra Incorporated </a>
                     </p>
                 </div>
@@ -84,7 +84,7 @@ export default {
                         Go check them out here:
                     </p>
                     <br>
-                    <p style="font-family: Eight Bit Dragon; color: aqua; font-size: 12px; font-style: italic; text-decoration: underline;"> 
+                    <p style="font-family: Eight Bit Dragon; color: aqua; font-size: 14px; font-style: italic; text-decoration: underline;"> 
                         <a href="https://www.facebook.com/flhong.aa/" target="_blank">F.L. Hong Architechs & Associates </a>
                     </p>
                 </div>

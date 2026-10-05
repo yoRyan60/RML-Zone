@@ -1,5 +1,6 @@
 <script>
 //Styling for the image carousel
+import { Splide, SplideSlide, SplideTrack } from '@splidejs/vue-splide';
 import '@splidejs/vue-splide/css/sea-green';
 export default {
     methods: {
@@ -11,6 +12,11 @@ export default {
             this.$router.push('/')
         },
     },
+    components: { //For splides to function properly if I plan on putting custom arrows, paginations, etc.
+    Splide,
+    SplideSlide,
+    SplideTrack
+    }
 }
 </script>
 
@@ -71,35 +77,49 @@ export default {
                     </p>
                     <br>
                 </div>
-                <Splide :options="{ rewind: true, autoplay: true, interval: number = 6000, pauseOnFocus: true, pauseOnHover: true }">
-                    <SplideSlide>
-                        <img src="/src/assets/images/Portfolio_images/statistics1.jpg" alt="statistics1">
-                    </SplideSlide>
-                    <SplideSlide>
-                        <img src="/src/assets/images/Portfolio_images/statistics2.jpg" alt="statistics2">
-                    </SplideSlide>
-                    <SplideSlide>
-                        <img src="/src/assets/images/Portfolio_images/statistics3.jpg" alt="statistics3">
-                    </SplideSlide>
-                    <SplideSlide>
-                        <img src="/src/assets/images/Portfolio_images/statistics4.jpg" alt="statistics4">
-                    </SplideSlide>
-                    <SplideSlide>
-                        <img src="/src/assets/images/Portfolio_images/statistics5.jpg" alt="statistics5">
-                    </SplideSlide>
-                    <SplideSlide>
-                        <img src="/src/assets/images/Portfolio_images/statistics6.jpg" alt="statistics6">
-                    </SplideSlide>
-                    <SplideSlide>
-                        <img src="/src/assets/images/Portfolio_images/statistics7.jpg" alt="statistics7">
-                    </SplideSlide>
-                    <SplideSlide>
-                        <img src="/src/assets/images/Portfolio_images/statistics8.jpg" alt="statistics8">
-                    </SplideSlide>
-                    <SplideSlide>
-                        <img src="/src/assets/images/Portfolio_images/statistics9.jpg" alt="statistics9">
-                    </SplideSlide>
-                </Splide>
+                <Splide :hasTrack="false" :options="{ rewind: true, autoplay: true, interval: number = 6000, pauseOnFocus: true, pauseOnHover: true }">
+                    <SplideTrack>
+                        <SplideSlide>
+                            <img src="/src/assets/images/Portfolio_images/statistics1.jpg" alt="statistics1">
+                        </SplideSlide>
+                        <SplideSlide>
+                            <img src="/src/assets/images/Portfolio_images/statistics2.jpg" alt="statistics2">
+                        </SplideSlide>
+                        <SplideSlide>
+                            <img src="/src/assets/images/Portfolio_images/statistics3.jpg" alt="statistics3">
+                        </SplideSlide>
+                        <SplideSlide>
+                            <img src="/src/assets/images/Portfolio_images/statistics4.jpg" alt="statistics4">
+                        </SplideSlide>
+                        <SplideSlide>
+                            <img src="/src/assets/images/Portfolio_images/statistics5.jpg" alt="statistics5">
+                        </SplideSlide>
+                        <SplideSlide>
+                            <img src="/src/assets/images/Portfolio_images/statistics6.jpg" alt="statistics6">
+                        </SplideSlide>
+                        <SplideSlide>
+                            <img src="/src/assets/images/Portfolio_images/statistics7.jpg" alt="statistics7">
+                        </SplideSlide>
+                        <SplideSlide>
+                            <img src="/src/assets/images/Portfolio_images/statistics8.jpg" alt="statistics8">
+                        </SplideSlide>
+                        <SplideSlide>
+                            <img src="/src/assets/images/Portfolio_images/statistics9.jpg" alt="statistics9">
+                        </SplideSlide>
+                    </SplideTrack>  
+                    <div class="splide__arrows">
+                        <div class="splide_arrows_container">
+                            <button class="splide__arrow splide__arrow--prev">
+                                <img src="/src/assets/images/imagecarousel_leftarrow.png" style="margin-right: 1.5rem;">
+                                <img class="splidearrow_topimage" src="/src/assets/images/imagecarousel_leftarrow_hover.png" style="margin-right: 1.5rem;">
+                            </button>
+                            <button class="splide__arrow splide__arrow--next">
+                                <img src="/src/assets/images/imagecarousel_rightarrow.png" style="margin-left: 1.5rem;">
+                                <img class="splidearrow_topimage" src="/src/assets/images/imagecarousel_rightarrow_hover.png" style="margin-left: 1.5rem;">
+                            </button>
+                        </div>
+                    </div>
+                    </Splide>
             </article>
         </div>
         <div class="container-description" style="text-align: left;">
@@ -130,25 +150,39 @@ export default {
                     <iframe class="itch_io_link" frameborder="0" src="https://itch.io/embed/5036004?linkback=true&amp;border_width=0&amp;bg_color=000000&amp;fg_color=ffffff&amp;link_color=61ff75&amp;border_color=333333" width="600" height="165"></iframe>
                 </div>
                 <div class="genericspaceshooterimages" style="width: 85%; margin-left: auto; margin-right: auto;">
-                    <Splide :options="{ rewind: true, perPage: 2, autoplay: true, interval: number = 4000, pauseOnFocus: true, pauseOnHover: true }">
-                        <SplideSlide>
-                            <img src="/src/assets/images/Portfolio_images/GenericSpaceShooter (IMG-1).png" alt="generic_space_shooter_image_1">
-                        </SplideSlide>
-                        <SplideSlide>
-                            <img src="/src/assets/images/Portfolio_images/GenericSpaceShooter (IMG-3).png" alt="generic_space_shooter_image_3">
-                        </SplideSlide>
-                        <SplideSlide>
-                            <img src="/src/assets/images/Portfolio_images/GenericSpaceShooter (IMG-4).png" alt="generic_space_shooter_image_4">
-                        </SplideSlide>
-                        <SplideSlide>
-                            <img src="/src/assets/images/Portfolio_images/GenericSpaceShooter (IMG-5).png " alt="generic_space_shooter_image_5">
-                        </SplideSlide>
-                        <SplideSlide>
-                            <img src="/src/assets/images/Portfolio_images/GenericSpaceShooter (GIF-1).gif " alt="generic_space_shooter_gif_1">
-                        </SplideSlide>
-                        <SplideSlide>
-                            <img src="/src/assets/images/Portfolio_images/GenericSpaceShooter (GIF-2).gif " alt="generic_space_shooter_gif_2">
-                        </SplideSlide>
+                    <Splide :hasTrack="false" :options="{ rewind: true, perPage: 2, autoplay: true, interval: number = 4000, pauseOnFocus: true, pauseOnHover: true }">
+                        <SplideTrack>
+                            <SplideSlide>
+                                <img src="/src/assets/images/Portfolio_images/GenericSpaceShooter (IMG-1).png" alt="generic_space_shooter_image_1">
+                            </SplideSlide>
+                            <SplideSlide>
+                                <img src="/src/assets/images/Portfolio_images/GenericSpaceShooter (IMG-3).png" alt="generic_space_shooter_image_3">
+                            </SplideSlide>
+                            <SplideSlide>
+                                <img src="/src/assets/images/Portfolio_images/GenericSpaceShooter (IMG-4).png" alt="generic_space_shooter_image_4">
+                            </SplideSlide>
+                            <SplideSlide>
+                                <img src="/src/assets/images/Portfolio_images/GenericSpaceShooter (IMG-5).png " alt="generic_space_shooter_image_5">
+                            </SplideSlide>
+                            <SplideSlide>
+                                <img src="/src/assets/images/Portfolio_images/GenericSpaceShooter (GIF-1).gif " alt="generic_space_shooter_gif_1">
+                            </SplideSlide>
+                            <SplideSlide>
+                                <img src="/src/assets/images/Portfolio_images/GenericSpaceShooter (GIF-2).gif " alt="generic_space_shooter_gif_2">
+                            </SplideSlide>
+                        </SplideTrack>
+                        <div class="splide__arrows">
+                            <div class="splide_arrows_container">
+                                <button class="splide__arrow splide__arrow--prev">
+                                    <img src="/src/assets/images/imagecarousel_leftarrow.png" style="margin-right: 1.5rem;">
+                                    <img class="splidearrow_topimage" src="/src/assets/images/imagecarousel_leftarrow_hover.png" style="margin-right: 1.5rem;">
+                                </button>
+                                <button class="splide__arrow splide__arrow--next">
+                                    <img src="/src/assets/images/imagecarousel_rightarrow.png" style="margin-left: 1.5rem;">
+                                    <img class="splidearrow_topimage" src="/src/assets/images/imagecarousel_rightarrow_hover.png" style="margin-left: 1.5rem;">
+                                </button>
+                            </div>
+                        </div>
                     </Splide>
                 </div>
             </article>

@@ -175,7 +175,6 @@ footer{
   background-color: black;
   padding: 12px;
   width: 100%;
-  content: "Hello";
   display: inline-block;
 }
 }
@@ -305,7 +304,6 @@ li{
 }
 .footer-container{
   display: flex;
-  flex-direction: column;
   min-height: 100vh;
 }
 
@@ -318,6 +316,7 @@ footer{
   width: 100%;
   content: "Hello";
   display: inline-block;
+  text-align: center;
 }
 .nav-divider{
   font-size: 8px;
@@ -390,16 +389,27 @@ body::before{
   justify-self: center;
 }
 
-.footer-link-GitHub{
-  background-image: url(/src/assets/images/GitHub_logo.png);
+.footer-link-container{
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*.footer-link-GitHub{
+  text-align: center;
+  background-image: url("/src/assets/images/GitHub_logo.png");
+  margin-top: 0.5rem;
   transition: background-image 0.5s;
   animation-fill-mode: forwards;
 }
 
 .footer-link-GitHub:hover{
-  background-image: url(/src/assets/images/GitHub_logo_hover.png);
+  text-align: center;
+  background-image: url("/src/assets/images/GitHub_logo_hover.png");
   cursor: pointer;
-}
+}*/
 
 .splide__slide img {
   width: 100%;

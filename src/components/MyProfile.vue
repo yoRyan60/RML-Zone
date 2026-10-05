@@ -37,11 +37,8 @@ export default {
                     <p class="container-description-text"> 
                        I've had experience coding in the following: 
                        <span style="color: greenyellow">C#, Java</span>. As well as one’s 
-                       for web development like <span style="color: greenyellow">HTML, CSS, </span>and 
-                       <span style="color: greenyellow">JavaScript</span>. 
-                       More recent ones being <span style="color: greenyellow">Node.js, </span> 
-                       <span style="color: greenyellow">Typescript</span> and 
-                       <span style="color: greenyellow">Vue.js</span>.
+                       for web development like <span style="color: greenyellow">HTML, CSS (Tailwind CSS), </span>and 
+                       <span style="color: greenyellow">JavaScript (Typescript, Vue.js)</span>. 
                     </p>
                     <br>
                     <p class="container-description-text"> 

@@ -81,6 +81,26 @@
   object-fit: contain;
 }
 
+.splide_arrow_container{ 
+  /*This mainly allows images to change on hover, but really it just makes another image appear on top*/
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+
+.splidearrow_topimage{ 
+  /*Expect this to be the resulting image on hover*/
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.splidearrow_topimage:hover{
+  opacity: 1;
+}
+
+
 /* Prevents text from wrapping around image. 
 Make sure to put it in a div that acts as the parent for the text you want to prevent wrapping around an image for. */
 .text-wrapper{  

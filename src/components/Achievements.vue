@@ -1,4 +1,6 @@
 <script>
+import { Splide, SplideSlide, SplideTrack } from '@splidejs/vue-splide';
+
 export default {
     methods: {
         scrollToTop(){
@@ -8,7 +10,12 @@ export default {
             this.scrollToTop();
             this.$router.push('/')
         },
-    },  
+    },
+    components: { //For splides to function properly if I plan on putting custom arrows, paginations, etc.
+    Splide,
+    SplideSlide,
+    SplideTrack
+    }  
 }
 </script>
 
@@ -42,10 +49,24 @@ export default {
                     <p class="container-description-text"> 
                         I decided to select a few courses from there and here's the certificates of completion for them:
                     </p>
-                    <Splide :options="{ rewind: true, autoplay: true, interval: number = 4000, pauseOnFocus: true, pauseOnHover: true }">
-                        <SplideSlide>
-                            <img src="/src/assets/images/Achievements_images/CiscoNetworkingAcademy_IntroductiontoCybersecurity_Certificate_LimRyan.png" alt="ciscocert1">
-                        </SplideSlide>
+                    <Splide :hasTrack="false" :options="{ rewind: true, autoplay: true, interval: number = 4000, pauseOnFocus: true, pauseOnHover: true }">
+                        <SplideTrack>
+                            <SplideSlide>
+                                <img src="/src/assets/images/Achievements_images/CiscoNetworkingAcademy_IntroductiontoCybersecurity_Certificate_LimRyan.png" alt="ciscocert1">
+                            </SplideSlide>
+                        </SplideTrack>
+                        <div class="splide__arrows">
+                            <div class="splide_arrows_container">
+                                <button class="splide__arrow splide__arrow--prev">
+                                    <img src="/src/assets/images/imagecarousel_leftarrow.png" style="margin-right: 1rem;">
+                                    <img class="splidearrow_topimage" src="/src/assets/images/imagecarousel_leftarrow_hover.png" style="margin-right: 1rem;">
+                                </button>
+                                <button class="splide__arrow splide__arrow--next">
+                                    <img src="/src/assets/images/imagecarousel_rightarrow.png" style="margin-left: 1rem;">
+                                    <img class="splidearrow_topimage" src="/src/assets/images/imagecarousel_rightarrow_hover.png" style="margin-left: 1rem;">
+                                </button>
+                            </div>
+                        </div>
                     </Splide>
                 </div>
             </article>
@@ -69,7 +90,7 @@ export default {
                 <div class="text-wrapper">
                     <p class="container-description-text"> 
                         After attending an Awarding of Honors event at my college, I received multiple awards. One being related to my GPA (General Point Average) and the other
-                        for me and group having the best capstone.
+                        for my group having the best capstone.
                     </p>
                     <br>
                     <p class="container-description-text"> 

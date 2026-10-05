@@ -27,7 +27,7 @@ export default {
         <div class="container-description" style="text-align: center;">
             <article>
                 <img class="img-center" src="/src/assets/images/stopicon.png">
-                <p class="container-description-text" style="font-size: 15px;">
+                <p class="container-description-text" style="font-size: 20px;">
                     Seems like whatever you're trying to find doesn't exist here.
                     Anyhow you can either stick around or return to where you were prior to this.
                 </p>

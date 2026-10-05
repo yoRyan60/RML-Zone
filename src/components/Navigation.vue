@@ -8,13 +8,14 @@ import { RouterLink } from 'vue-router';
     <ul>
         <RouterLink to="/">
         <div class="RML-Digital-Portfolio_logo_container">
-          <img src="/src/assets/images/LimRyan_Portfolio_Logo.png" alt="Logo">
-          <img class="topimage" src="/src/assets/images/LimRyan_Portfolio_Logo_Inverted.png" alt="Logo2">
+          <img src="/src/assets/images/RML-Zone_Website_Logo.png" alt="Logo">
+          <img class="topimage" src="/src/assets/images/RML-Zone_Website_Logo_Inverted.png" alt="Logo2">
         </div>
         </RouterLink>
-        <p>RML Digital Portfolio<span></span></p>
+        <p>RML Zone<span></span></p>
         <!--<RouterLink to="/"><li>[Home]</li></RouterLink>-->
         <RouterLink to="/Portfolio"><li>[Portfolio]</li></RouterLink>
+        <RouterLink to="/Contact"><li>[Contact]</li></RouterLink>
         <RouterLink to="/About"><li>[About]</li></RouterLink>
     </ul>
   </nav>

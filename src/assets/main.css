@@ -54,18 +54,40 @@ footer{
   display: inline-block;
 }
 
-.footer-link-GitHub{
-  float: right;
+.footer-link-container{ /*For various icons with links like GitHub for example*/
+  display: inline-block;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 0.5rem;
+}
+
+.footer-link_topimage{ 
+  /*Expect this to be the resulting image on hover*/
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.footer-link_topimage:hover{
+  opacity: 1;
+}
+
+/*.footer-link-GitHub{
+  margin-top: 0.5rem;
   background-image: url("/src/assets/images/GitHub_logo.png");
   transition: background-image 0.5s;
   animation-fill-mode: forwards;
 }
 
 .footer-link-GitHub:hover{
-  float: right;
+  margin-top: 0.5rem;
   background-image: url("/src/assets/images/GitHub_logo_hover.png");
   cursor: pointer;
-}
+}*/
 
 
 #app {

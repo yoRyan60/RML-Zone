@@ -16,11 +16,15 @@ import Navigation from './components/Navigation.vue';
     <main>
       <RouterView/>
     </main>
-    <footer style="font-family: Smallest Pixel-7;">
-          Copyright © {{ currentYear }} RML. All rights reserved. 
-          <a href="https://github.com/yoRyan60" target="_blank">
+    <footer style="font-family: Smallest Pixel-7; font-size: 1.1rem;">
+        Copyright © {{ currentYear }} RML. All rights reserved. All third party content belongs to their respective owners.
+        <br>
+        <a href="https://github.com/yoRyan60" target="_blank">
+          <div class="footer-link-container">
             <img src="/src/assets/images/GitHub_logo.png" class="footer-link-GitHub"> 
-          </a>
+            <img src="/src/assets/images/GitHub_logo_hover.png" class="footer-link-GitHub footer-link_topimage"> 
+          </div>
+        </a> 
     </footer>
   </div>
 </template>
