@@ -77,7 +77,7 @@ export default {
                 <h2 class="container-description-header">College - Graduation Diploma</h2>
                 <div class="text-wrapper">
                     <p class="container-description-text"> 
-                        I graduated from De La Salle College of Saint Benilde (DLS-CSB) in July of 2024 receiving my diploma and degree in
+                        I graduated from De La Salle-College of Saint Benilde (DLS-CSB) in July of 2024 receiving my diploma and degree in
                         Bachelor of Science in Information Systems (BS-IS).
                     </p>
                     <br>

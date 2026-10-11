@@ -31,7 +31,7 @@ export default {
                 <div class="text-wrapper">
                     <p class="container-description-text"> 
                         Hi, my name is <span style="color:greenyellow">Ryan Lim</span>. 
-                        A graduate from the course of BS-IS also known as Bachelor of Science Major in Information Systems in De La Salle College of Saint Benilde. 
+                        A graduate from the course of BS-IS also known as Bachelor of Science Major in Information Systems in De La Salle-College of Saint Benilde. 
                     </p>
                     <br>
                     <p class="container-description-text"> 
